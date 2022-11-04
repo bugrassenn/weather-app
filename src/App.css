@@ -1,38 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://images.pexels.com/photos/216629/pexels-photo-216629.jpeg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  padding: 8px 18px;
+  box-sizing: border-box;
+  border-radius: 999px;
+  background-color: #fff;
+  line-height: 32px;
+  color: black;
+  margin-top: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: skyblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputText {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 550;
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 999px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputText:focus {
+  outline: 3px solid transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.city {
+  margin-top: 20px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 28px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.degree {
+  margin-top: 20px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.weather_forecast {
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.feels_like {
+  margin-top: 20px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#temp {
+  margin-left: 10px;
+  font-size: 20px;
 }

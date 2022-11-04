@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Form from "./components/form.js";
+import { Info } from "./components/Info.js";
+import { useState } from "react";
 
 function App() {
+  const [info, setInfo] = useState([]);
+
+  const [state, setState] = useState(false); // state false yapma sebebimiz ekrana f5 attığımızda uygulamanın yok olmasını önlemek
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Form info={info} setInfo={setInfo} setState={setState} />
+      <Info setInfo={setInfo} info={info} state={state} />
     </div>
   );
 }
