@@ -9,4 +9,4 @@
 
 
 
-<p><img  src="https://github.com/bugrassenn/weather-app/blob/main/Weather-app.gif"  width ="500" height="320" /></p>
+<p><img  src="https://github.com/bugrassenn/weather-app/blob/main/weather-app.gif"  width ="500" height="320" /></p>
